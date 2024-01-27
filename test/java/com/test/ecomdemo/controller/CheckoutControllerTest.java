@@ -1,6 +1,5 @@
 package com.test.ecomdemo.controller;
 
-import com.test.ecomdemo.repository.WatchRepository;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,6 @@ public class CheckoutControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    @Autowired
-    private WatchRepository watchRepository;
 
     @Test
     void checkoutSuccess() throws Exception {

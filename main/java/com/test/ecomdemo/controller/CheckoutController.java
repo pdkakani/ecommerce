@@ -19,6 +19,7 @@ public class CheckoutController {
     public CheckoutController(CheckoutService checkoutService) {
         this.checkoutService = checkoutService;
     }
+
     @PostMapping("/checkout")
     public ResponseEntity<Receipt> checkout(@RequestBody List<Integer> watchIds) {
         log.info("Retrieving receipt...");

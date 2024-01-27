@@ -19,5 +19,4 @@ class CheckoutServiceTest {
         var receipt = checkoutService.getCartPrice(List.of(001, 002, 001, 001, 003));
         assertEquals(330, receipt.getPrice());
     }
-
 }
